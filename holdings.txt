@@ -1,0 +1,15 @@
+chainlink	100
+pepe	1.23456789000E9
+polkadot-new	100
+xrp	123.456
+fantom	100.100
+internet-computer	100
+cardano	1000
+the-graph	1000
+usd-coin	1500.0
+ethereum	1.2345
+dogecoin	420.69
+cosmos	1
+basic-attention-token	1
+celestia	0
+unsupported-tokens-usd-value	10300.0
