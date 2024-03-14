@@ -125,7 +125,13 @@ public class Main {
                 double price = prices.get(slug);
                 double value = price * quantity;
                 totalValue += value;
-                rows.add(new String[]{slug, Double.toString(quantity), currencyFormatter.format(value)});
+                String formattedPrice;
+                if (price > 0.01f) {
+                    formattedPrice = currencyFormatter.format(price);
+                } else {
+                    formattedPrice = String.format("$%.10f", price);
+                }
+                rows.add(new String[]{slug, Double.toString(quantity), formattedPrice, currencyFormatter.format(value)});
             } else {
                 System.out.println("Coin with slug " + slug + " not found in API response.");
             }
